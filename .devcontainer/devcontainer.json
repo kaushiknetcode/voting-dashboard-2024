@@ -1,0 +1,21 @@
+{
+  "name": "Voting Dashboard",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/postgresql:1": {}
+  },
+  "forwardPorts": [5173, 5001, 5432],
+  "postCreateCommand": "npm run codespace:init",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "ms-vsliveshare.vsliveshare"
+      ]
+    }
+  },
+  "remoteUser": "node"
+}
